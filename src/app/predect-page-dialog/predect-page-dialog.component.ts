@@ -33,7 +33,7 @@ export class PredectPageDialogComponent implements OnInit {
   errorMessage="";
   ngOnInit(): void {
     console.log("called the function")
-     this.http.get<any>("http://hdsapi-predict.herokuapp.com/predictoutput/"+this.data.get('age')+","+this.data.get('gender')+","+this.data.get('chestpain')+","+this.data.get('restingbloodpressur')+","+233+","+this.data.get('bloodsugerlevels')+","+this.data.get('ecgresults')+","+this.data.get('maximumheartrateachived')+","+this.data.get('exercieinducedagina')+","+this.data.get('STdepressioninducedbyexercise')+","+this.data.get('slopest')+","+this.data.get('majorvesselscolored')+","+this.data.get('Thalassemia')).subscribe({
+     this.http.get<any>("https://hdsapi-predict.herokuapp.com/predictoutput/"+this.data.get('age')+","+this.data.get('gender')+","+this.data.get('chestpain')+","+this.data.get('restingbloodpressur')+","+233+","+this.data.get('bloodsugerlevels')+","+this.data.get('ecgresults')+","+this.data.get('maximumheartrateachived')+","+this.data.get('exercieinducedagina')+","+this.data.get('STdepressioninducedbyexercise')+","+this.data.get('slopest')+","+this.data.get('majorvesselscolored')+","+this.data.get('Thalassemia')).subscribe({
       next: data =>{this.ans = data
       console.log(data)
       if(this.ans=="[1]")
@@ -64,7 +64,7 @@ export class PredectPageDialogComponent implements OnInit {
   }
   get_https(){
     console.log("called the function")
-     this.http.get<any>("http://hdsapi-predict.herokuapp.com/predictoutput/"+this.data.get('age')+","+this.data.get('gender')+","+this.data.get('chestpain')+","+this.data.get('restingbloodpressur')+","+this.data.get("cholostrollevels")+","+this.data.get('bloodsugerlevels')+","+this.data.get('ecgresults')+","+this.data.get('maximumheartrateachived')+","+this.data.get('exercieinducedagina')+","+this.data.get('STdepressioninducedbyexercise')+","+this.data.get('slopest')+","+this.data.get('majorvesselscolored')+","+this.data.get('Thalassemia')).subscribe({
+     this.http.get<any>("https://hdsapi-predict.herokuapp.com/predictoutput/"+this.data.get('age')+","+this.data.get('gender')+","+this.data.get('chestpain')+","+this.data.get('restingbloodpressur')+","+this.data.get("cholostrollevels")+","+this.data.get('bloodsugerlevels')+","+this.data.get('ecgresults')+","+this.data.get('maximumheartrateachived')+","+this.data.get('exercieinducedagina')+","+this.data.get('STdepressioninducedbyexercise')+","+this.data.get('slopest')+","+this.data.get('majorvesselscolored')+","+this.data.get('Thalassemia')).subscribe({
       next: data =>{this.ans = data
       console.log(data)
       if(this.ans=="[1]")
