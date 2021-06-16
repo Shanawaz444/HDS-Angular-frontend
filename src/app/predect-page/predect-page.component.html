@@ -1,0 +1,384 @@
+<div style="background-color:#11487D">
+    <img src="assets/images/predect _page_images/bottom blob 2.png" class="bottom_blob1" alt="bottom bolb img">
+    <img src="assets/images/predect _page_images/bottom blob 1.png" class="bottom_blob2" alt="bottom bolb img">
+    
+    <nav class="predict_page_nav">
+        <div class="predict_page_nav_title">
+            HDS
+        </div>
+        <div class="predict_page_nav_options">
+            <div class="contact_us" (click)="contactus()">
+               contact us 
+            </div>
+            <div (click)="logout()" class="logout">
+                logout         
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div class="predect_main_content">
+    
+        <div class="predect_main_content_box">
+            <div class="predect_main_content_title">
+                Predect your chances!
+            </div>
+            <div class="model_section">
+                <div class="inputstomodel">
+                    <mat-vertical-stepper style="background-color: transparent;" [linear]=true #stepper>
+    
+                        <mat-step>
+                            <ng-template   matStepLabel>
+                               
+                                <div class="matStepLabel_style">
+                                    Fill your Age
+                                </div>
+                               
+                            
+                            </ng-template>
+    
+                            <mat-form-field class="example-form-field">
+                                <mat-label ><div class="matStepLabel_style">
+                                    enter your age
+                                </div></mat-label>
+                                <input matInput  type="text" [(ngModel)]="value">
+                                <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                                  <mat-icon>close</mat-icon>
+                                </button>
+                              </mat-form-field>
+                              <div>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+                        </mat-step>
+                        <mat-step>
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                select your gender (i.e male or female)
+                            </div>
+                            
+                        </ng-template>
+    
+                        <mat-radio-group aria-label="Select an option"  [(ngModel)]="genderselect">
+                            <mat-radio-button value=0>Male</mat-radio-button>
+                            <mat-radio-button style="margin-left: 20px;margin-top: 20px;" value=1>Female</mat-radio-button>
+                          </mat-radio-group>
+                          <div class="stepper_buttons_block">
+                            <button mat-button matStepperPrevious>Back</button>
+                            <button mat-button matStepperNext>Next</button>
+                          </div>
+                        </mat-step>
+    
+    
+    
+                        <mat-step>
+    
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                select your chest pain type:
+                                </div>
+                            </ng-template>
+                            <mat-label ><div class="matStepLabel_style" >
+                                {{chestpaintypearray[chestpaintype]}}
+                            </div></mat-label>
+                            <mat-slider
+                            style="margin-top: 20px;width: 200px"
+
+                           
+
+                            thumbLabel
+                            [(ngModel)]="chestpaintype"
+                            
+                            min="0" max="3" step="1" value="1">
+    
+                            </mat-slider>
+                            <div class="stepper_buttons_block">
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+                        </mat-step>
+    
+    
+    
+    
+                        <mat-step>
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                select your Resting Blood Pressure:
+                                </div>
+                            </ng-template>
+                            <mat-label ><div class="matStepLabel_style" >
+                                {{bloodpresure}} mmgh
+                            </div></mat-label>
+                            <mat-slider
+                            style="margin-top: 20px;width: 200px"
+                            thumbLabel
+                            [(ngModel)]="bloodpresure"
+                            
+                            min="94" max="200" step="1">
+    
+                            </mat-slider>
+                            <div class="stepper_buttons_block">
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+                        </mat-step>
+                        <mat-step>
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                select your cholostrol levels:
+                                </div>
+                            </ng-template>
+                            <mat-label ><div class="matStepLabel_style" >
+                                {{cholostrollevels}}
+                            </div></mat-label>
+                            <mat-slider
+                            style="margin-top: 20px;width: 200px"
+                            thumbLabel
+                            [(ngModel)]="cholostrollevels"
+                            
+                            min="10" max="350" step="1">
+    
+                            </mat-slider>
+                            <div class="stepper_buttons_block">
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+                        </mat-step>
+                        <mat-step>
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                    fasting blood sugar levels:
+                                </div>
+                            </ng-template>
+                            <mat-radio-group style="flex-direction: column; display: flex" aria-label="Select an option" [(ngModel)]="fastingbloodsuger">
+                                <mat-radio-button style="margin-top: 10px;" value=1>greater then 120 mg/dl</mat-radio-button>
+                                <mat-radio-button style="margin-top: 20px;" value=0>lesser then 120 mg/dl</mat-radio-button>
+                              </mat-radio-group>
+                              <div class="stepper_buttons_block">
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+                        </mat-step>
+    
+    
+    
+    
+                        <mat-step>
+    
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                    resting electrocardiographic ECG results:
+                                </div>
+                            </ng-template>
+                            <mat-label ><div class="matStepLabel_style" >
+                                {{recgarray[recg]}}
+                            </div></mat-label>
+                            <mat-slider
+                            style="margin-top: 20px;width: 200px"
+                            thumbLabel
+                            [(ngModel)]="recg"
+                            
+                            min="0" max="2" step="1" >
+    
+                            </mat-slider>
+                            <div class="stepper_buttons_block">
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+                        </mat-step>
+    
+    
+    
+    
+                        <mat-step>
+    
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                    Maximum heart rate achieved:
+                                </div>
+                            </ng-template>
+                            <mat-label ><div class="matStepLabel_style" >
+                                {{maxheartrateachived}}
+                            </div></mat-label>
+                            <mat-slider
+                            style="margin-top: 20px;width: 200px"
+                            thumbLabel
+                            [(ngModel)]="maxheartrateachived"
+                            
+                            min="71" max="202" step="1" >
+    
+                            </mat-slider>
+                            <div class="stepper_buttons_block">
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+                        </mat-step>
+    
+    
+    
+                        
+                        <mat-step>
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                    Exercise induced agena:
+                                </div>
+                            </ng-template>
+                            <mat-radio-group style="flex-direction: column; display: flex" aria-label="Select an option" [(ngModel)]="exerciseinducedagena">
+                                <mat-radio-button style="margin-top: 10px;" [value]=1 >yes</mat-radio-button>
+                                <mat-radio-button style="margin-top: 20px;" [value]=0 >no</mat-radio-button>
+                              </mat-radio-group>
+                              <div class="stepper_buttons_block">
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+                        </mat-step>
+    
+    
+    
+    
+                        <mat-step>
+    
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                    ST depression induced by exercise:
+                                </div>
+                            </ng-template>
+                            <mat-label ><div class="matStepLabel_style" >
+                                {{STdepressioninducedbyexercise}}
+                            </div></mat-label>
+                            <mat-slider
+                            style="margin-top: 20px;width: 200px"
+                            thumbLabel
+                            [(ngModel)]="STdepressioninducedbyexercise"
+                            
+                            min="0" max="6" step="1" >
+    
+                            </mat-slider>
+                            <div class="stepper_buttons_block">
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+    
+                        </mat-step>
+    
+    
+    
+    
+                        <mat-step>
+    
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                    slope of the peak exercise ST segment:
+                                </div>
+                            </ng-template>
+                            <mat-label ><div class="matStepLabel_style" >
+                                {{slopeofthepeakexerciseSTsegmentarray[slopeofthepeakexerciseSTsegment]}}
+                            </div></mat-label>
+                            <mat-slider
+                            style="margin-top: 20px;width: 200px"
+                            thumbLabel
+                            [(ngModel)]="slopeofthepeakexerciseSTsegment"
+                            
+                            min="0" max="2" step="1" >
+    
+                            </mat-slider>
+                            <div class="stepper_buttons_block">
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+    
+                        </mat-step>
+    
+    
+    
+                        <mat-step>
+    
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                    number of major vessels colored by flourosopy:
+                                </div>
+                            </ng-template>
+                            <mat-label ><div class="matStepLabel_style" >
+                                {{majorvesselscolored}}
+                            </div></mat-label>
+                            <mat-slider
+                            style="margin-top: 20px; width: 200px"
+                            thumbLabel
+                            [(ngModel)]="majorvesselscolored"
+                            
+                            min="0" max="4" step="1" >
+    
+                            </mat-slider>
+                            <div class="stepper_buttons_block">
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                              </div>
+    
+                        </mat-step>
+    
+    
+    
+    
+    
+    
+                        <mat-step>
+    
+                            <ng-template class="matStepLabel_style" matStepLabel>
+                                <div class="matStepLabel_style">
+                                    Thalassemia (thal-uh-SEE-me-uh) present in the body:
+                                </div>
+                            </ng-template>
+                            <mat-label ><div class="matStepLabel_style" >
+                                {{Thalassemiaarray[Thalassemia]}}
+                            </div></mat-label>
+                            <mat-slider
+                            style="margin-top: 20px;width: 200px"
+                            thumbLabel
+                            [(ngModel)]="Thalassemia"
+                            
+                            min="0" max="2" step="1" >
+    
+                            </mat-slider>
+                            <div class="stepper_buttons_block">
+                                <button  mat-button matStepperPrevious>Back</button>
+                                
+                              </div>
+    
+                        </mat-step>
+    
+    
+                    </mat-vertical-stepper>
+                    
+    
+    
+    
+    
+    
+    
+    
+                </div>
+                <div class="modelimage">
+                    <img src="assets/images/predect _page_images/machine_learning1.gif" class="modelimage_style" alt="">
+                    
+                    <div  class="model_message">
+                        {{model_message}}
+                    </div>
+                    
+                    <div class="predect_button" (click)="openDialog()">
+                       
+                            Predict
+                       
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+    </div>
+    <div class="coopoweredby">
+        Created by 2018-2022 batch-15 VIIT.
+    </div>
+</div>
+
+
+

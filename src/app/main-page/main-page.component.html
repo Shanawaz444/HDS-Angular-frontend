@@ -1,0 +1,111 @@
+<div style="background-color: #00203F;">
+<div class="nav_bar_of_main_page">
+    <div class="nav_bar_logo">
+        HDS
+    </div>
+    <div class="nav_bar_links">
+        <div class="nav_bar_contactus" (click)="contactus()">
+            contact us
+        </div>
+        <div *ngIf=islogged style="margin-right: 20px;">
+            Welcome {{username}}
+        </div>
+        <div *ngIf=islogged class="nav_bar_logout" style="margin-right: 50px;" (click)="logout()">
+            logout
+        </div>
+        <div  *ngIf=!islogged class="nav_bar_signin" (click)="loginrouting()"  >
+            signin
+        </div>
+        <div *ngIf=!islogged class="nav_bar_signup"  (click)="registerrouting()">
+            signup
+        </div>
+    </div>
+</div>
+<div class="main_page_about_section">
+<div class="about_the_page">
+    <div  class="about_the_page_title">
+        Welcome to HDS
+        <div class="about_the_page_title_fullform">
+            Heart Diagnosis Site
+        </div>
+    </div>
+    <div class="about_the_page_intro">
+        Taking care of your heart is good<br>
+        Thats why we are here.<br>
+        HDS helps you to verify whether your<br>
+        heart is in perfect condition or not.<br>
+        Please read the instructions below <br>
+        carefully and then proceed.
+    </div>
+    <div   class="about_the_page_proceed_Button_outer" >
+        <button (click)="proceedfun()"  class="about_the_page_proceed_Button" >
+            proceed
+        </button>
+    </div>
+    
+</div>
+
+<div class="main_page_about_section_image">
+    <img  src="assets/images/main_page_images/follow_instructions1.gif" class="main_page_about_image" alt="vector.png">
+</div>
+
+</div>
+
+
+
+<div class="main_page_instructions">
+    <div class="main_page_instructions_section1">
+        <div class="main_page_instructions_section1_top">
+            Please follow the  instructions give int the right <br>
+            side clearly, each and every answer you<br>
+            provide can save your life. 
+        </div>
+        <div class="main_page_instructions_section1_middle">
+            <img class="main_page_instructions_section1_middle_image" src="assets/images/main_page_images/follow_instructions2.gif"  alt="vector.png">
+        </div>
+        <div class="main_page_instructions_section1_bottom">
+            <div class="detail_instruction_text">
+                click the button for detail<br>
+                instructions
+            </div>
+            <div class="detail_instruction_button" >
+                <button  class="detail_instruction_button_style" (click)="more_details()" >
+                    click me
+                </button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="details_which_they_should_enter">
+
+        <div class="test">
+            <div class="details_which_they_should_enter_title">
+                Instructions
+            </div>
+            <div class="details_which_they_should_enter_subtitle">
+                we nned few details of your medical reports in order to diagonos your heart condition.
+            </div>
+            <div class="reports_values_tobe_entered">
+                .we need your age,sex(i.e male or female)<br>
+                .your chest pain type, typical angina, atypical angina, non-anginal pain or asymptomatic.<br>
+                .serum cholostrol levels<br>
+                .fasting blood suger levels(i.e whether they are above 120 mg/gl or not)<br>
+                .resting electrocardiographic results(0 = normal, 1 = having ST-T, 2 =hypertrophy)<br>
+                .maximum herat rate achieved<br>
+                .exercice induced angina<br>
+                .St depression induced by exercice relative to rest<br>
+                .slope of the peak exercice ST segement<br>
+                .number of major vessels(0-3) colored by flourosopy<br>
+                .Thalium test (normal or fixed-defect, reversable defect)
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+<div class="coopoweredby">
+    Created by 2018-2022 batch-15 VIIT.
+</div>
+
+</div>

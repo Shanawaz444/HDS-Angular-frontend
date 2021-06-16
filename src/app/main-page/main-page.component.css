@@ -1,0 +1,369 @@
+.nav_bar_of_main_page
+{
+    display: flex;  
+    padding-top:10px;
+    font-family: "alata";
+    color: #ADEFD1;
+    background-color:#00203F;
+    padding-bottom: 10px;
+}
+.nav_bar_links{
+
+    display: flex;
+    margin-left: auto;
+    font-size: 15px;
+    
+}
+.nav_bar_contactus{
+    cursor: pointer;
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav_bar_contactus:hover{
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+    color: orangered
+}
+.nav_bar_signin{
+    cursor: pointer;
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+}
+.nav_bar_signin:hover{
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+    color: orangered
+}
+.nav_bar_signup{
+    cursor: pointer;
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+}
+.nav_bar_signup:hover{
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+    color: orangered
+}
+.nav_bar_logo{
+    margin-left: 20px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size:20px;
+}
+.nav_bar_contactus{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.nav_bar_signin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav_bar_signup{
+    margin-left: 10px;
+    margin-right: 25px;
+}
+.nav_bar_logout{
+    cursor: pointer;
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+}
+.nav_bar_logout:hover{
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+    color: orangered
+}
+
+
+
+
+.main_page_about_section{
+
+    font-family: "alata";
+    color: #ADEFD1;
+    background-color:#00203F;
+    display: flex;
+}
+.about_the_page{
+
+    margin-left:100px;
+    margin-top: 100px;
+}
+.about_the_page_title{
+    font-size: 40px;
+    font-weight:400;
+}
+.about_the_page_title_fullform{
+
+    font-size:25px;
+    font-weight:400;
+}
+.about_the_page_intro{
+    margin-top: 15px;
+    font-size:18px;
+}
+.about_the_page_proceed_Button{
+    
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align:center;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #ADEFD1;
+    color: #00203F;
+    font-size:15px;
+    font-weight:500;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 2px;
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+}
+.about_the_page_proceed_Button:hover{
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+    border-style:solid;
+    border-color:black;
+}
+.about_the_page_proceed_Button_outer
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2px;
+    max-width:118px;
+    background-color: #ADEFD1;
+}
+
+
+
+
+
+
+.main_page_instructions{
+    background-color: #ADEFD1;
+    display:flex;
+    padding-bottom: 20px;
+
+}
+.main_page_instructions_section1{
+    margin-right: 50px;
+    margin-top: 60px;
+    margin-left: 70px;
+color: #00203F;
+font-family: "alata";
+
+}
+.main_page_instructions_section1_top{
+    
+    font-size: 22px;
+}
+
+
+.main_page_instructions_section1_middle_image
+{
+    margin-top:10px;
+    max-width: 400px;
+}
+
+
+.main_page_about_section_image{
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+
+
+.details_which_they_should_enter{
+
+    margin-left: auto;
+    margin-top: 100px;
+    
+    color: #ADEFD1;
+font-family: "alata";
+max-width: 700px;
+clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+
+
+}
+.test{
+    border-top: 0px;
+    border-right: 0px;
+    
+    background-color: #00203F;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-right:50px;
+}
+.details_which_they_should_enter_title{
+    font-size:30px;
+}
+.details_which_they_should_enter_subtitle{
+    font-size:20px;
+}
+.reports_values_tobe_entered{
+    margin-top: 10px;
+}
+.main_page_instructions_section1_bottom{
+    display: flex;
+}
+.detail_instruction_button_style{
+    text-align: center;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ADEFD1;
+    background-color:#00203F;
+    border-style: solid;
+    border-color: transparent;
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+}
+.detail_instruction_button{
+margin-top: 15px;
+margin-left:10px;
+}
+.detail_instruction_button_style:hover{
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+    border-style:solid;
+    border-color:white;
+}
+.detail_instruction_button{
+    padding:2px;
+    background-color: #00203F;
+}
+
+.coopoweredby{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #00203F;
+    color:white;
+}
+.main_page_instructions{
+    clip-path: polygon(0 0, 88% 0, 100% 17%, 100% 100%, 7% 100%, 0 88%);
+    box-shadow: rgba(0, 0, 0, 0.568) 0px 5px 15px;
+    border-style: solid;
+    border-color: white;
+    margin-left: 20px;
+    margin-right: 20px
+}
+@media screen and (max-width:1165px) {
+    .main_page_instructions
+    {
+        flex-direction: column;
+    }
+    .main_page_instructions_section1{
+        margin-top: 0px;
+        padding-top:50px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .details_which_they_should_enter{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:1007px)
+{
+    .main_page_about_section_image{
+        padding-right: 0px;
+        margin-right:0px;
+        
+    }
+
+}
+
+@media screen and (max-width:898px)
+{
+    .about_the_page
+    {
+        margin-left: 5px;
+        padding-left:5px;
+    }
+    .main_page_instructions{
+        clip-path: none;
+        box-shadow: rgba(0, 0, 0, 0.568) 0px 5px 15px;
+        border-style: solid;
+        border-color: white;
+        margin-left: 20px;
+        margin-right: 20px
+    }
+
+}
+@media screen and (max-width:807px)
+{
+    .main_page_about_section{
+        flex-direction:column-reverse;
+    }
+    .about_the_page{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .main_page_about_section_image{
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    .test{
+        margin-right: 5px;
+        padding:0px;
+        
+        padding-bottom: 30px;
+        padding-top: 30px;
+        border-style:none;
+        box-shadow: rgba(0, 0, 0, 0.568) 0px 5px 15px;
+        
+        
+        
+    }
+    .reports_values_tobe_entered,.details_which_they_should_enter_subtitle{
+        padding-left: 20px;
+    }
+    .details_which_they_should_enter_title{
+        text-align: center;
+    }
+    .details_which_they_should_enter{
+        clip-path: none;
+        margin-left: 5px;
+    }
+}
+
+
+
+@media screen and (max-width:505px)
+{
+    
+    .main_page_about_image{
+        height: 400px;
+        width: 400px;
+    }
+    .main_page_instructions_section1_top{
+        font-size:15px;
+        text-align: center;
+    }
+    .main_page_instructions_section1_middle_image{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    
+    .main_page_about_image{
+        height: 350px;
+        width: 350px;
+    }
+    .main_page_instructions{
+        clip-path: none;
+        box-shadow: rgba(0, 0, 0, 0.568) 0px 5px 15px;
+        border-style: solid;
+        border-color: white;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+}

@@ -1,0 +1,327 @@
+    .predict_page_nav
+    {
+        padding:20px;
+        display: flex;
+        background-color: #11487D;
+    }
+    .predict_page_nav_title
+    {
+        font-weight: 600;
+        color: #ADEFD1;
+        font-family: "alata";
+        font-size: 20px;
+    }
+    .predict_page_nav_options
+    {
+        margin-left: auto;
+        display: flex;
+        color: #ADEFD1;
+        font-family: "alata";
+        margin-right: 20px;
+        font-size:17px
+    }
+    .contact_us{
+        margin-left:20px;
+        transition:.2s;
+        transition-timing-function: ease-in-out;
+        cursor: pointer;
+        
+    }
+    .contact_us:hover{
+        transition:.2s;
+        transition-timing-function: ease-in-out;
+        color: orange;
+        transform: scale(1.1);
+    }
+    .logout{
+        margin-left:20px;
+        transition:.2s;
+        transition-timing-function: ease-in-out;
+        cursor: pointer;
+        
+    }
+    .logout:hover{
+        transition:.2s;
+        transition-timing-function: ease-in-out;
+        color: orange;
+        transform: scale(1.1);
+    }
+    
+    .bottom_blob2
+    {
+        position:fixed;
+        bottom: 0;
+        left: 0;
+     
+    }
+    .bottom_blob1
+    {
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        animation: blob1 2s infinite;
+    }
+    @keyframes blob1{
+        50%{transform:translateY(-20px)scale(1.05)}
+        100%{transform:translateY(0px)scale(1)}
+    }
+
+
+
+
+
+
+
+
+
+    .predect_main_content{
+        display: flex;
+        padding-top: 100px;
+        background-color: #11487D;
+        
+        
+    }
+    .predect_main_content_box
+    {box-shadow: rgba(0, 0, 0, 0.568) 0px 5px 15px;
+        z-index: 1;
+        margin-left:auto;
+        background-color: #00203F;
+    }
+    .model_section{
+        display: flex;
+       
+        background-color: #00203F;
+    }
+    
+    .inputstomodel{
+        margin-left:40px;
+        margin-top: 40px;
+        border-style: solid;
+        border-color: white;
+        border-width:2px;
+        border-right: 0px;
+        border-top: 0px;
+        margin-bottom: 20px;
+    }
+    .predect_main_content_title{
+        margin-top: 40px;
+        text-align: center;
+        font-family: "alata";
+    color: #ADEFD1;
+    font-size:25px;
+    }
+    .inputstomodel{
+        font-family: "alata";
+    color: #ADEFD1;
+    font-size:18px;
+    max-width:600px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    }
+    .modelimage{
+        margin-top: 100px;
+        margin-right: 50px;
+    }
+    .modelimage_style
+    {
+        height:500px;
+        transform: translateX(-20px);
+        -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+    }
+    .modelimage_style:hover{
+        transform:translateX(-20px) rotateY(10deg);
+    }
+
+
+
+
+
+
+    .model_message
+    {
+        text-align: center;
+       
+        font-family: "alata";
+    color: #ADEFD1;
+    font-size:18px;     
+    }
+    .predect_button{
+        margin-top: 40px;
+        text-align: center;
+        font-family: "alata";
+    color: #00203F;
+    cursor: pointer;
+    font-size:15px;    
+    color: #FFF;
+  border: 2px solid rgb(2, 216, 205);
+  border-radius: 0px;
+  padding: 15px 30px;
+  display: inline-block;
+  margin-left: 40%;
+  box-shadow: inset 0 0 0 0 #ADEFD1;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+    }
+    .predect_button_style
+    {
+        font-family: "alata";
+    color: #00203F;
+    background-color: #ADEFD1;
+    font-size:15px;    
+    border-style: none;
+    padding:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    }
+    .predect_button:hover{
+        /*
+        box-shadow: rgba(233, 233, 233, 0.35) 0px 5px 15px;*/
+        box-shadow: inset 400px 0 0 0 #ADEFD1;
+        color: #00203F;
+    }
+    .matStepLabel_style{
+        color: #ADEFD1;
+    }
+   .stepper_buttons_block
+   {
+       margin-top:20px;
+   }
+   .coopoweredby{
+       text-align: center;
+       color: white;
+       font-family: "alata";
+       padding-top: 20px;
+       padding-bottom: 10px;
+       background-color: #11487D;
+       z-index: 1;
+       
+   }
+
+
+
+
+
+
+
+   @media (max-width: 1031px)
+    {
+        .model_section{
+            display: block;
+        }
+        .modelimage_style{
+            transform: translateX(0px);
+        }
+        
+    }
+
+
+
+
+    @media (max-width: 577px)
+    {
+        .model_section{
+            display: block;
+           
+        }
+        .inputstomodel{
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+        .modelimage_style{
+            transform: translateX(0px);
+           height: 400px;
+
+        }
+        .inputstomodel{
+            font-size:12px;
+        }
+        .modelimage{
+            margin-top:20px;
+            margin-right: 10px;
+        }
+        .bottom_blob1,.bottom_blob2{
+            display:none;
+        }
+        
+    }
+    @media (max-width: 577px)
+    {
+        .predect_main_content_title{
+            font-size: medium;
+        }
+        .inputstomodel{
+            padding-left: 0px;
+            
+        }
+        
+    }
+   /* @media(min-width: 1497px)
+    {
+        .inputstomodel{
+            font-size: 20px;
+        }
+        .matStepLabel_style{
+            font-size: 25px;
+        }
+        .modelimage_style{
+           
+           height: 700px;
+
+        }
+        .model_message{
+            font-size: 25px;
+        }
+        .coopoweredby{
+            font-size: 25px;
+        }
+        .inputstomodel{
+            max-width:max-content
+        }
+    }
+
+
+
+
+
+    @media(min-width: 1995px)
+    {
+        .predict_page_nav_title
+        {
+            font-size: 55px;
+        }
+        .contact_us{
+            font-size: 45px;
+        }
+        .logout{
+             font-size: 45px;
+        }
+        .inputstomodel{
+            font-size: 25px;
+        }
+        .matStepLabel_style{
+            font-size: 45px;
+           
+        }
+        .predect_main_content_title{
+            font-size: 50px;
+        }
+        .modelimage_style{
+           
+           height: 800px;
+
+        }
+        .model_message{
+            font-size: 25px;
+        }
+        .coopoweredby{
+            font-size: 25px;
+        }
+        button{
+            font-size: 35px;
+        }
+    }*/
